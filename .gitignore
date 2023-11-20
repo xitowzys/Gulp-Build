@@ -1,0 +1,39 @@
+# Ignore temporary Gulp files
+node_modules/
+dist/
+
+# Ignore Gulp configuration files
+gulpfile.js
+
+# Ignore files created by Gulp
+.sass-cache/
+.tmp/
+
+# Ignore npm configuration files
+package-lock.json
+
+# Ignore Visual Studio Code configuration files
+.vscode/
+
+# Ignore log and debug files
+*.log
+debug.log
+
+# Ignore editor settings files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# Ignore Windows settings files
+Thumbs.db
+ehthumbs.db
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore npm configuration files
+npm-debug.log

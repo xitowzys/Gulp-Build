@@ -1,0 +1,35 @@
+{
+    "name": "gulp-bundle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "gulp watch",
+        "stylelint": "stylelint ./dist/css/**/*.css --fix",
+        "build:dev": "gulp && npm run stylelint",
+        "build:prod": "gulp --prod && npm run stylelint"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-env": "^7.23.3",
+        "@babel/register": "^7.22.15",
+        "babel": "^6.23.0",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-file-include": "^2.3.0",
+        "gulp-format-html": "^2.3.0",
+        "gulp-group-css-media-queries": "^1.2.2",
+        "gulp-notify": "^4.0.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-server-livereload": "^1.9.2",
+        "gulp-sourcemap": "^1.0.2",
+        "sass": "^1.69.5",
+        "stylelint": "^15.11.0",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-config-standard-scss": "^11.1.0",
+        "stylelint-scss": "^5.3.1"
+    }
+}
