@@ -7,14 +7,14 @@ import startServer from "./gulp/tasks/startServer";
 
 const { task, series, parallel } = gulp;
 
-gulp.task("startServer", startServer);
+gulp.task("start-server", startServer);
 
 gulp.task(
-  "build",
-  gulp.series(
-    gulp.parallel(includeHtmlFiles, sassCompiler, copyImages),
-    formatHtmlDist
-  )
+    "build",
+    gulp.series(
+        gulp.parallel(includeHtmlFiles, sassCompiler, copyImages),
+        formatHtmlDist
+    )
 );
 
 task("default", series("build"));

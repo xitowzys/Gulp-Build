@@ -1,8 +1,9 @@
 const config = {
-  fileIncludeSetting: {
-    prefix: "@@",
-    basepath: "@file",
-  },
+    fileIncludeSetting: {
+        prefix: "@@",
+        basepath: "@file",
+    },
+    distPath: "./dist/"
 };
 
 export default config;

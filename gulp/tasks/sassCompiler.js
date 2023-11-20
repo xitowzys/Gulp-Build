@@ -5,12 +5,10 @@ import dartSass from "sass";
 const sass = gulpSass(dartSass);
 
 const sassCompiler = () => {
-  console.log("ok");
-
-  return gulp
-    .src("./src/scss/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./dist/css/"));
+    return gulp
+        .src("./src/scss/*.scss")
+        .pipe(sass().on("error", sass.logError))
+        .pipe(gulp.dest("./dist/css/"));
 };
 
 export default sassCompiler;
