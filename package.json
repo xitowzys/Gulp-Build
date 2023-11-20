@@ -5,16 +5,19 @@
     "main": "index.js",
     "scripts": {
         "dev": "gulp watch",
-        "stylelint": "stylelint ./dist/css/**/*.css --fix",
-        "build:dev": "gulp && npm run stylelint",
-        "build:prod": "gulp --prod && npm run stylelint"
+        "stylelint-scss": "stylelint ./src/scss/**/*.scss --fix",
+        "build:dev": "gulp",
+        "build:prod": "gulp --prod"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@babel/preset-env": "^7.23.3",
         "@babel/register": "^7.22.15",
+        "@ronilaukkarinen/gulp-stylelint": "^14.1.2",
         "babel": "^6.23.0",
+        "browser-sync": "^2.29.3",
+        "eslint": "^8.54.0",
         "gulp": "^4.0.2",
         "gulp-clean": "^0.4.0",
         "gulp-file-include": "^2.3.0",
