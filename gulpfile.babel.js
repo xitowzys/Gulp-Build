@@ -6,6 +6,7 @@ import copyImages from './gulp/tasks/copyImages';
 import cleanDist from './gulp/tasks/cleanDist';
 import stylelintDist from './gulp/tasks/stylelintDist';
 import watch from './gulp/watch';
+import jsBuild from './gulp/tasks/jsBuild';
 
 gulp.task('clean-dist', cleanDist);
 
@@ -13,6 +14,7 @@ gulp.task('build', gulp.series(
     cleanDist,
     gulp.parallel(
         includeHtmlFiles,
+        jsBuild,
         sassCompiler,
         copyImages
     ),
@@ -25,6 +27,5 @@ gulp.task('watch', gulp.series(
     'build',
     watch
 ));
-
 
 gulp.task('default', gulp.series('build'));
